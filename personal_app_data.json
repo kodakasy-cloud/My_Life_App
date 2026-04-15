@@ -1,0 +1,54 @@
+{
+  "user_data": {
+    "nome": "Koda",
+    "idade": "22",
+    "foto_path": "C:/Users/joaoi/Pictures/e22acce459049a5386d04316eed69982.jpg",
+    "email": "dsada",
+    "telefone": "123"
+  },
+  "diario_entries": [
+    {
+      "data": "15/04/2026 10:08",
+      "texto": "gfdgdfgdfgdfg"
+    }
+  ],
+  "tasks": [
+    {
+      "texto": "fsdfse",
+      "concluida": false,
+      "data_criacao": "15/04/2026"
+    },
+    {
+      "texto": "gdfgdfgfgdfg",
+      "concluida": false,
+      "data_criacao": "15/04/2026"
+    }
+  ],
+  "financas": [
+    {
+      "descricao": "fds",
+      "valor": 123.0,
+      "tipo": "receita",
+      "data": "15/04/2026"
+    },
+    {
+      "descricao": "fdsa",
+      "valor": 312.0,
+      "tipo": "despesa",
+      "data": "15/04/2026"
+    },
+    {
+      "descricao": "gerger",
+      "valor": 23432.0,
+      "tipo": "receita",
+      "data": "15/04/2026"
+    },
+    {
+      "descricao": "frefewf",
+      "valor": 543.0,
+      "tipo": "despesa",
+      "data": "15/04/2026"
+    }
+  ],
+  "notas": []
+}
