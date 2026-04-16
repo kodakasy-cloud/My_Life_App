@@ -1,54 +1,60 @@
 {
   "user_data": {
-    "nome": "Koda",
-    "idade": "22",
-    "foto_path": "C:/Users/joaoi/Pictures/e22acce459049a5386d04316eed69982.jpg",
-    "email": "dsada",
-    "telefone": "123"
+    "nome": "Usuário",
+    "idade": "",
+    "foto_path": "profile_photos\\profile_20260416_183557.png",
+    "senha_hash": "8bb0cf6eb9b17d0f7d22b456f121257dc1254e1f01665370476383ea776df414",
+    "ultima_alteracao_senha": "16/04/2026 18:35",
+    "email": "",
+    "telefone": "",
+    "bio": "",
+    "tema": "Escuro",
+    "notificacoes": true,
+    "idioma": "Português",
+    "ultima_atualizacao": "16/04/2026 18:35",
+    "ultimo_acesso": "16/04/2026 18:42"
   },
-  "diario_entries": [
-    {
-      "data": "15/04/2026 10:08",
-      "texto": "gfdgdfgdfgdfg"
-    }
-  ],
+  "diario_entries": [],
   "tasks": [
     {
-      "texto": "fsdfse",
-      "concluida": false,
-      "data_criacao": "15/04/2026"
-    },
-    {
-      "texto": "gdfgdfgfgdfg",
-      "concluida": false,
-      "data_criacao": "15/04/2026"
+      "id": 1,
+      "texto": "dasdas",
+      "concluida": true,
+      "data_criacao": "16/04/2026",
+      "data_vencimento": "16/04/2026",
+      "prioridade": "URGENTE",
+      "categoria": "TRABALHO",
+      "descricao": "dasdasd",
+      "subtarefas": [
+        {
+          "texto": "asddwdw",
+          "concluida": false
+        }
+      ],
+      "anexos": [],
+      "tags": [
+        "as"
+      ]
     }
   ],
   "financas": [
     {
-      "descricao": "fds",
-      "valor": 123.0,
-      "tipo": "receita",
-      "data": "15/04/2026"
-    },
-    {
-      "descricao": "fdsa",
-      "valor": 312.0,
+      "descricao": "fewsfew",
+      "valor": 43213.0,
       "tipo": "despesa",
-      "data": "15/04/2026"
+      "categoria": "🎮 Lazer",
+      "data": "16/04/2026",
+      "timestamp": 1776374956.892554
     },
     {
-      "descricao": "gerger",
-      "valor": 23432.0,
+      "descricao": "fsdfsdfd",
+      "valor": 312454.0,
       "tipo": "receita",
-      "data": "15/04/2026"
-    },
-    {
-      "descricao": "frefewf",
-      "valor": 543.0,
-      "tipo": "despesa",
-      "data": "15/04/2026"
+      "categoria": "💰 Salário",
+      "data": "16/04/2026",
+      "timestamp": 1776374972.633814
     }
   ],
-  "notas": []
+  "notas": [],
+  "eventos": {}
 }
