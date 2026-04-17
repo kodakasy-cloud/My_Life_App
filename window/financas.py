@@ -411,7 +411,7 @@ class FinancasManager:
             
             try:
                 datetime.strptime(data, "%d/%m/%Y")
-            except:
+            except ValueError:
                 messagebox.showwarning("Aviso", "Data inválida! Use DD/MM/AAAA")
                 return
             

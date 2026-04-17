@@ -146,7 +146,7 @@ class AnotacoesManager:
         
         self.notes_frame.bind("<Configure>", lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
         
-        canvas.create_window((0, 0), window=self.notes_frame, anchor="nw", width=canvas.winfo_reqwidth())
+        self.canvas_window = canvas.create_window((0, 0), window=self.notes_frame, anchor="nw", width=canvas.winfo_reqwidth())
         canvas.configure(yscrollcommand=scrollbar.set)
         
         canvas.pack(side="left", fill="both", expand=True)
@@ -163,8 +163,11 @@ class AnotacoesManager:
         
         # Atualizar largura do canvas quando redimensionar
         def configure_canvas(event):
-            canvas.itemconfig(1, width=event.width)
-        
+            try:
+                canvas.itemconfig(self.canvas_window, width=event.width)
+            except Exception:
+                pass
+
         canvas.bind('<Configure>', configure_canvas)
     
     def toggle_favorite_filter(self):

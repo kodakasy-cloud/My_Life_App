@@ -1,0 +1,12 @@
+[tool.pyright]
+reportUnknownParameterType = false
+reportUnknownVariableType = false
+reportUnusedImport = "warning"
+reportGeneralTypeIssues = true
+
+[tool.pylint.main]
+ignore = ["migrations"]
+
+[tool.mypy]
+ignore_missing_imports = true
+disallow_untyped_defs = false

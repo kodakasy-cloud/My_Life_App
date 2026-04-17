@@ -1,4 +1,3 @@
-from .perfil import PerfilManager
 from .diario import DiarioManager
 from .tarefa import TarefasManager
 from .financas import FinancasManager

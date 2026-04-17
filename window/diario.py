@@ -1,3 +1,4 @@
+import logging
 import tkinter as tk
 from tkinter import messagebox, font as tkfont
 from datetime import datetime
@@ -208,7 +209,7 @@ class DiarioManager:
         self.entries_frame = tk.Frame(canvas, bg='white')
         
         self.entries_frame.bind("<Configure>", lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
-        canvas.create_window((0, 0), window=self.entries_frame, anchor="nw", width=canvas.winfo_reqwidth())
+        self.canvas_window = canvas.create_window((0, 0), window=self.entries_frame, anchor="nw", width=canvas.winfo_reqwidth())
         canvas.configure(yscrollcommand=scrollbar.set)
         
         canvas.pack(side="left", fill="both", expand=True)
@@ -216,12 +217,20 @@ class DiarioManager:
         
         # Scroll com mouse wheel
         def on_mousewheel(event):
-            canvas.yview_scroll(int(-1*(event.delta/120)), "units")
-        
+            try:
+                if not canvas.winfo_exists():
+                    return
+                canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+            except Exception:
+                logging.getLogger(__name__).exception("Erro no on_mousewheel do diário")
+
         canvas.bind_all('<MouseWheel>', on_mousewheel)
         
         def configure_canvas(event):
-            canvas.itemconfig(1, width=event.width)
+            try:
+                canvas.itemconfig(self.canvas_window, width=event.width)
+            except Exception:
+                pass
         
         canvas.bind('<Configure>', configure_canvas)
         
