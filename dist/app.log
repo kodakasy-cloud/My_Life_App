@@ -1,0 +1,3 @@
+2026-04-17 16:32:11,483 INFO main.main_window: Inicializando PersonalApp
+2026-04-17 16:32:11,863 INFO main.main_window: Dados salvos em personal_app_data.json
+2026-04-17 16:32:11,863 INFO main.main_window: Aplicação principal inicializada e dados salvos
